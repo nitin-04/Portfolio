@@ -61,3 +61,19 @@ window.addEventListener("mousemove", function(e){
         top: `${posY}px`,
     },{duration:500, fill: "forwards"});
 });
+
+
+// script.js
+const progressCircle = document.querySelector('.progress-circle');
+
+let rotationSpeed = 2; // in seconds
+
+function changeSpeed(speed) {
+    rotationSpeed = speed;
+    progressCircle.style.animationDuration = `${rotationSpeed}s`;
+}
+
+// Change speed on click (optional)
+progressCircle.addEventListener('click', () => {
+    changeSpeed(rotationSpeed === 2 ? 1 : 2); // Toggle speed
+});
