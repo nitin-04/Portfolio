@@ -873,8 +873,6 @@ section {
     }
 }
 
-
-
 .main-title {
     text-align: center;
 
@@ -901,3 +899,5 @@ section {
         } */
     }
 }
+
+@import './media.css'
