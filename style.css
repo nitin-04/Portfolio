@@ -47,6 +47,7 @@ body {
     color: var(--white-color);
     transition: all .4s ease-in-out;
     cursor: none;
+    overflow-x: hidden;
 }
 
 .cursor-dot {
