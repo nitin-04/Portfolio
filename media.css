@@ -71,8 +71,8 @@
     .portfolios {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
         grid-gap: 1rem; /* Reduce spacing between items */
         margin-top: 2rem; /* Slightly reduce margin */
 
@@ -164,7 +164,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         padding: 1rem;
     }
@@ -210,6 +210,7 @@
         .right-about {
             grid-template-columns: 1fr;
             padding-top: 2rem;
+            padding-right: 50%;
         }
 
         .left-about {
@@ -277,6 +278,7 @@
         .right-contact {
             margin-left: 0;
             margin-top: 2rem;
+            padding-bottom: 5rem;
         }
     }
 
@@ -323,363 +325,10 @@
     }
 }
 
-@media screen and (min-width: 992px) {
-    header {
-        padding: 1.5rem;
-    }
 
-    header .right-header {
-        padding: 0 !important;
-    }
+/* @media screen and (max-width: 1070px) {  
 
-    .theme-btn {
-        width: 70px;
-        height: 70px;
-    }
 
-    .header-content {
-        grid-template-columns: 1fr;
-        padding-bottom: 4rem;
-    }
-
-    .left-header {
-        .h-shape {
-            display: none;
-        }
-    }
-
-    .right-header {
-        grid-row: 1;
-        width: 75%;
-        margin: 0 auto;
-
-        .name {
-            font-size: 3rem !important;
-        }
-    }
-
-    .header-content .left-header .image {
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-
-        .right-about {
-            grid-template-columns: 1fr;
-            padding-top: 2rem;
-        }
-
-        .left-about {
-            padding-right: 0;
-
-            p {
-                padding-left: 0;
-            }
-        }
-    }
-
-    .timeline {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout for medium screens */
-        padding-bottom: 5rem;
-        grid-gap: 2rem;
-    }
-
-    .about-stats {
-        .progress-bars {
-            grid-template-columns: 1fr 1fr; /* Two-column progress bars */
-        }
-    }
-
-    .portfolios {
-        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
-        padding-bottom: 5rem;
-        grid-gap: 2rem;
-        margin-top: 2rem;
-
-        .portfolio-item {
-            margin-bottom: 25px;
-
-            img {
-                width: 100%; /* Responsive width */
-                height: 300px; /* Fixed height for consistent size */
-                border: 6px solid var(--grey-color-6); /* Maintain border consistency */
-                border-radius: 15px;
-                object-fit: cover; /* Ensure image cropping */
-            }
-
-            .hover-items {
-                h3 {
-                    font-size: 1.4rem; /* Adjust font size */
-                }
-
-                .icons .icon {
-                    width: 50px; /* Icon size for larger viewports */
-                    height: 50px;
-
-                    i {
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .blogs {
-        grid-template-columns: repeat(2, 1fr); /* Two-column blog layout */
-        padding-bottom: 5rem;
-        grid-gap: 2rem;
-    }
-
-    .contact-content-con {
-        flex-direction: row;
-
-        .right-contact {
-            margin-left: 2rem;
-            margin-top: 0;
-        }
-    }
-
-    .contact-content-con .right-contact .i-ctrl-2 {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .contact-content-con .right-contact .i-ctrl-2 :last-child {
-        margin-left: 1.5rem;
-        margin-top: 0;
-    }
-
-    .section {
-        padding: 5rem 4rem !important;
-    }
-
-    .main-title {
-        h2 {
-            font-size: 3rem;
-
-            span {
-                font-size: 3.5rem;
-            }
-
-            .bg-text {
-                font-size: 4rem;
-            }
-        }
-    }
-
-    .controlls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--grey-color-5);
-
-        .control {
-            margin: 0.8rem 1rem !important;
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    header {
-        padding: 2rem;
-    }
-
-    header .right-header {
-        padding: 0 !important;
-    }
-
-    .theme-btn {
-        width: 70px;
-        height: 70px;
-    }
-
-    .header-content {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout for header content */
-        padding-bottom: 4rem;
-    }
-
-    .left-header {
-        .h-shape {
-            display: block;
-        }
-    }
-
-    .right-header {
-        grid-row: 1;
-        width: 70%;
-        margin: 0 auto;
-
-        .name {
-            font-size: 3.2rem !important;
-        }
-    }
-
-    .header-content .left-header .image {
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    .about-container {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-        grid-gap: 2rem;
-
-        .right-about {
-            padding-top: 2rem;
-        }
-
-        .left-about {
-            padding-right: 1rem;
-
-            p {
-                padding-left: 0;
-            }
-        }
-    }
-
-    .timeline {
-        grid-template-columns: repeat(2, 1fr); /* Two-column layout for timeline */
-        padding-bottom: 5rem;
-        grid-gap: 2.5rem;
-    }
-
-    .about-stats {
-        .progress-bars {
-            grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-        }
-    }
-
-    .portfolios {
-        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
-        padding-bottom: 5rem;
-        grid-gap: 2rem;
-        margin-top: 2rem;
-
-        .portfolio-item {
-            margin-bottom: 25px;
-
-            img {
-                width: 100%; /* Responsive width */
-                height: 300px; /* Fixed height for consistency */
-                border: 6px solid var(--grey-color-6); /* Maintain consistent borders */
-                border-radius: 15px;
-                object-fit: cover; /* Ensure image cropping */
-            }
-
-            .hover-items {
-                h3 {
-                    font-size: 1.5rem; /* Adjusted font size */
-                }
-
-                .icons .icon {
-                    width: 55px; /* Icon size adjustment */
-                    height: 55px;
-
-                    i {
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .blogs {
-        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
-        padding-bottom: 5rem;
-        grid-gap: 2rem;
-    }
-
-    .contact-content-con {
-        flex-direction: row;
-
-        .right-contact {
-            margin-left: 2rem;
-            margin-top: 0;
-        }
-    }
-
-    .contact-content-con .right-contact .i-ctrl-2 {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .contact-content-con .right-contact .i-ctrl-2 :last-child {
-        margin-left: 1.5rem;
-        margin-top: 0;
-    }
-
-    .section {
-        padding: 6rem 4rem !important;
-    }
-
-    .main-title {
-        h2 {
-            font-size: 3.5rem;
-
-            span {
-                font-size: 4rem;
-            }
-
-            .bg-text {
-                font-size: 4.5rem;
-            }
-        }
-    }
-
-    .controlls {
-        top: auto;
-        bottom: 0;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        background-color: var(--grey-color-5);
-
-        .control {
-            margin: 1rem 1.2rem !important;
-        }
-    }
-}
-
-
-/* @media screen and (max-width: 1432px) {
-    header {
-        padding: 0 !important;
-    }
-
-    .section {
-        padding: 7rem 11rem;
-    }
-
-    .contact-content-con {
-        flex-direction: column;
-
-        .right-contact {
-            margin-left: 0;
-            margin-top: 2.5rem;
-        }
-    }
-
-    .contact-content-con .right-contact .i-ctrl-2 {
-        flex-direction: column;
-    }
-
-
-    .contact-content-con .right-contact .i-ctrl-2 :last-child {
-        margin-left: 0;
-        margin-top: 1.5rem;
-    }
-
-}
-
-
-@media screen and (max-width: 1070px) {
     .about-container {
         grid-template-columns: 1fr;
 
@@ -791,4 +440,4 @@
             font-size: 4rem;
         }
     }
-} */
+}  */
