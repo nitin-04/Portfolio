@@ -425,11 +425,30 @@ section {
                     }
 
                     .reactjs {
-                        width: 0;
+                        width: 20%;
                     }
 
+                    .c-plus {
+                        width: 45%;
+                    }
                     .c {
-                        width: 30%;
+                        width: 50%;
+                    }
+                    .python {
+                        width: 50%;
+                    }
+
+                    .sql{
+                        width: 55%;
+                    }
+                    .ms-excel{
+                        width: 70%;
+                    }
+                    .bi{
+                        width: 60%;
+                    }
+                    .tableau{
+                        width: 70%;
                     }
                 }
             }
