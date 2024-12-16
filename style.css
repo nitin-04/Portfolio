@@ -368,93 +368,9 @@ section {
     }
 }
 
-/* .about-stats {
+.about-stats {
     padding-bottom: 4rem;
-
-    .progress-bars {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-
-        .progress-bar {
-            display: flex;
-            flex-direction: column;
-
-            .prog-title {
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-
-            .progress-con {
-                display: flex;
-                align-items: center;
-
-                .prog-text {
-                    color: var(--grey-color-2);
-                }
-
-                .progress {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    height: 0.45rem;
-                    background-color: var(--grey-color-4);
-                    margin-left: 1rem;
-                    position: relative;
-
-                    span {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        background-color: var(--secondary-color);
-                        transition: all .4s ease-in-out;
-                        width: 60%;
-                    }
-
-                    .html {
-                        width: 90%;
-                    }
-
-                    .css {
-                        width: 60%;
-                    }
-
-                    .js {
-                        width: 50%;
-                    }
-
-                    .reactjs {
-                        width: 20%;
-                    }
-
-                    .c-plus {
-                        width: 45%;
-                    }
-                    .c {
-                        width: 50%;
-                    }
-                    .python {
-                        width: 50%;
-                    }
-
-                    .sql{
-                        width: 55%;
-                    }
-                    .ms-excel{
-                        width: 70%;
-                    }
-                    .bi{
-                        width: 60%;
-                    }
-                    .tableau{
-                        width: 70%;
-                    }
-                }
-            }
-        }
-    }
-} */
+} 
 
 .stat-title {
     text-transform: uppercase;
