@@ -498,21 +498,28 @@ section {
     text-align: center;
 }
 
+/* Ensure the parent container of portfolios takes up the full width */
 .portfolios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
+    padding: 0 1rem; /* Add padding to ensure there's no overflow on smaller screens */
+    width: 100%;
+    justify-items: center; /* Center the items inside the grid */
 }
 
+/* Portfolio item styles */
 .portfolio-item {
     position: relative;
     border-radius: 15px;
     margin-bottom: 30px;
 }
 
+/* Image inside portfolio item */
 .portfolio-item img {
-    width: 450px;
+    width: 100%; /* Adjust to take full width of parent */
+    max-width: 450px; /* Ensure max width */
     height: 400px;
     border: 6px solid var(--grey-color-6);
     display: block;
@@ -522,6 +529,7 @@ section {
     cursor: pointer;
 }
 
+/* Hover items for portfolio */
 .portfolio-item .hover-items {
     cursor: pointer;
     width: 100%;
@@ -540,12 +548,14 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
+/* Hover item text */
 .portfolio-item .hover-items h3 {
     font-size: 1.5rem;
     color: var(--white-color);
     margin-bottom: 1.5rem;
 }
 
+/* Icon styling in hover items */
 .portfolio-item .hover-items .icons {
     display: flex;
     justify-content: center;
@@ -565,6 +575,7 @@ section {
     transition: all 0.4s ease-in-out;
 }
 
+/* Hover effect for icons */
 .portfolio-item .hover-items .icons .icon i {
     font-size: 1.5rem;
     color: var(--white-color);
@@ -579,11 +590,11 @@ section {
     color: var(--primary-color);
 }
 
+/* Hover effect for portfolio item */
 .portfolio-item:hover .hover-items {
     opacity: 1;
     transform: scale(1);
 }
-
 
 /* Blogs Section*/
 
